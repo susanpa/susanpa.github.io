@@ -1,0 +1,17 @@
+# Source article PDFs are local inputs for thumbnail generation only.
+# The site publishes the rendered first-page images (img/papers/*.png),
+# not the PDFs themselves (publisher copyright + large files).
+papers/*.pdf
+
+# Article PDFs dropped into cv/ (incl. subfolders) for rendering. Keep only the CV.
+cv/*.pdf
+cv/**/*.pdf
+!cv/Averett_CV.pdf
+!cv/cv.pdf
+
+# Local-only Claude notes — keep on disk (auto-loaded) but never publish
+CLAUDE.md
+CLAUDE.local.md
+
+# macOS cruft
+.DS_Store
